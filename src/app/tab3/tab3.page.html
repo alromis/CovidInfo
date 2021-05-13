@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Spain Data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+
+ <!-- <ion-list *ngFor = "let dada of this.esp; let i=index">
+    <ion-item>{{ dada.numCasos }}</ion-item>
+
+  </ion-list>-->
+
+  <ion-card *ngFor = "let dada of this.esp; let i=index">
+  <ion-card-content>
+      <ion-label><b>Date: </b>{{ dada.data }}</ion-label><br>
+      <ion-label><b>Num. Cases: </b>{{ dada.numCasos }}</ion-label><br>
+      <ion-label><b>Num. Deaths: </b>{{ dada.numMorts }}</ion-label><br>
+      <ion-label><b>Num. Recovered: </b>{{ dada.numRecuperats }}</ion-label>
+    </ion-card-content>
+    </ion-card>
+  
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Global Summary
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense"></ion-header>
+  <br>
+  <ion-title>
+    Total Confirmed Cases
+  </ion-title>
+  <br>
+  <ion-title>{{ this.dades[0] }}</ion-title>
+  <br>
+  <ion-progress-bar value="0.44" buffer="0.8"></ion-progress-bar>
+  <br>
+  <br>
+  <ion-title>
+    Total Confirmed Deaths
+  </ion-title>
+  <br>
+  <ion-title>{{ this.dades[1] }}</ion-title>
+  <br>
+  <ion-progress-bar value="0.02" buffer="0.8"></ion-progress-bar>
+  <br>
+  <br>
+  <ion-title>
+    Total Recovered Cases
+  </ion-title>
+  <br>
+  <ion-title>{{ this.dades[2] }}</ion-title>
+  <br>
+  <ion-progress-bar value="0.17" buffer="0.8"></ion-progress-bar>
+
+
+</ion-content>

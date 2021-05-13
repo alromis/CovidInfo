@@ -1,0 +1,7 @@
+{
+  "name": "CovidCharts",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
